@@ -1,0 +1,66 @@
+
+<html>
+<head>
+<title>newT3_Game</title>
+<script src="t-3.js" LANGUAGE="JavaScript"> </script>
+<style>
+ body {
+   
+	background-image: url(" b5.jpg");
+ }
+ h1{
+    color: white;
+   font-size: 80px;
+   }
+ h2{
+    color: white;
+   font-size: 22px;
+   }
+ p {
+    color: white;
+  
+   }
+   </style>
+</head>
+
+<body>
+<h1> Tic-Tac-Toe game</h1>
+<center>
+<form name=game>
+<table border=0>
+<td>
+<table border=1>
+<tr>
+<td><a href="javascript:User_Choice('A')"><img src="blank.png" border=0 height=100 width=100 name=A alt="Top-Left"></a></td>
+<td><a href="javascript:User_Choice('B')"><img src="blank.png" border=0 height=100 width=100 name=B alt="Top-Center"></a></td>
+<td><a href="javascript:User_Choice('C')"><img src="blank.png" border=0 height=100 width=100 name=C alt="Top-Right"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:User_Choice('D')"><img src="blank.png" border=0 height=100 width=100 name=D alt="Middle-Left"></a></td>
+<td><a href="javascript:User_Choice('E')"><img src="blank.png" border=0 height=100 width=100 name=E alt="Middle-Center"></a></td>
+<td><a href="javascript:User_Choice('F')"><img src="blank.png" border=0 height=100 width=100 name=F alt="Middle-Right"></a></td>
+</tr>
+<tr>
+<td><a href="javascript:User_Choice('G')"><img src="blank.png" border=0 height=100 width=100 name=G alt="Bottom-Left"></a></td>
+<td><a href="javascript:User_Choice('H')"><img src="blank.png" border=0 height=100 width=100 name=H alt="Bottom-Center"></a></td>
+<td><a href="javascript:User_Choice('I')"><img src="blank.png" border=0 height=100 width=100  name=I alt="Bottom-Right"></a></td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<h2>Score:</h2>
+<tr><td><input type=text size=5 name=you></td><td><p>You</p></td></tr>
+<tr><td><input type=text size=5 name=computer></td><td><p>Computer</p></td></tr>
+<tr><td><input type=text size=5 name=ties></td><td><p>Ties</p></td></tr>
+</table>
+</td>
+</table>
+<input type=button value="Play Again" onClick="playAgain();">
+&nbsp;&nbsp;
+<input type=button value="Game Help" onClick="help();">
+</form>
+</center>
+
+</body>
+</html>
